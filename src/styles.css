@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: yanone;
+    src: url('./assets/fonts/YanoneKaffeesatz-Light.ttf');
+}
+
+@font-face {
+    font-family: fingerPaintRegular;
+    src: url('./assets/fonts/FingerPaint-Regular.ttf');
+}
+
+@font-face {
+    font-family: titilliumWeb;
+    src: url('./assets/fonts/TitilliumWeb-Light.ttf');
+}
+
+
+/* Generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(146, 140, 140, 0.5);
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+}
+
+.clearfix {
+    float: none;
+    clear: both;   
+}
+
+.flex{
+    display: inline-flex;
+    align-items: center;
+
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

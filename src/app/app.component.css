@@ -1,0 +1,197 @@
+/*  Cabecera (Header) */
+header {
+    display: block;
+    width: 100%;
+    height: 130px;
+    background: rgba(71, 139, 223, 0.8);
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 120px;
+}
+.titulo{
+    font-family: titilliumweb;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+header ul li {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-family: titilliumWeb;
+}
+
+header ul li a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+
+header ul li a:hover, .actived{
+    background: rgba(0, 0, 0, 0.329);
+
+}
+
+.dropdown-menu {
+    margin-top: -10px;
+    background-color: gray;
+}
+
+
+#content {
+    min-height: 790px;
+    width: 95%;
+    margin: 0px auto;
+    box-shadow: 0 0 140px black;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+footer{
+    font-family: titilliumWeb;
+    background: rgba(41, 39, 39, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.842);
+    justify-content: center;  
+    margin-top: 10px;
+}
+
+footer #iconos-cristianos i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer .fila1, footer .fila2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer .fila1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgba(71, 139, 223, 0.8);
+    text-align: center;
+}
+footer .fila1 p{
+    font-size:140%    
+}
+footer .fila2 {
+    margin-top:20px;
+    background-color: rgb(54, 54, 54);
+    min-height: 350px;
+    padding-top: 15px;
+    width: 100%;
+    align-items: center;
+}
+footer .fila2 .logo{
+    display: block;
+    margin: auto;
+    width: 77%;
+}
+footer .fila2 p {
+    text-align: center;
+}
+footer .fila2 .redes-sociales{
+    width: 5vw;
+    margin-right: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+footer .fila2 p i, footer .fila2 p span {
+    margin-left: 5px;
+    color: #e1e6ef;
+}
+footer .fila2 p span{
+    font-family: yanone;
+}
+
+
+table{
+    padding-inline-start: 15px;
+}
+table td, table tr {
+    padding: 10px;
+}
+
+#mision{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.fila2Flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+.logo-footer, .location,.horarios{
+    font-size:1.2vw;
+}
+
+.logo-footer{
+    width: 20%;
+}
+
+.location{
+    text-align: center;
+}
+.location img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.copyright{
+    margin-top: 15px;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 920px) {
+
+    .titulo, .logo-footer {
+        display: none;
+    }
+    nav {
+        background: rgba(71, 139, 223, 0.8);
+        line-height: 35px;
+
+    }
+    header{
+        line-height: 100%;
+    }
+
+    .logo-footer, .location,.horarios, .copyright{
+        font-size:2.5vw;
+    }
+
+}
+

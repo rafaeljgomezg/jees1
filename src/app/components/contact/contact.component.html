@@ -1,0 +1,61 @@
+<h2 class="m-4 text-center">DEJENOS SUS DATOS PARA QUE LO CONTACTEMOS</h2>
+
+
+<div class="container d-flex justify-content-center">
+
+
+  <div class="card">
+    <div class="card-body">
+
+      <form [formGroup]="userForm" class="p-4" (ngSubmit)="guardarContacto()">
+        <div class="form-group mb-4">
+          <label for="nombre" class="form-label" >Nombre(s) y Apellido(s)</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre" [class.is-invalid]="userForm.get('nombre')?.touched && userForm.get('nombre')?.invalid">
+          <div class="text-danger float-start" *ngIf="userForm.get('nombre')?.hasError('pattern')">
+            Este campo <strong>No Admite caracteres especiales y/o numeros</strong>
+          </div>
+          <div class="text-danger float-start" *ngIf="userForm.get('nombre')?.hasError('required') && userForm.get('nombre')?.touched" >
+            Campo <strong>Requerido</strong>
+          </div>
+        </div>
+        
+        <div class="form-group mb-4">
+          <label for="telefono" class="form-label" >Numero Telefonico (Ingrese solo numeros)</label>
+          <input type="tel" class="form-control" id="telefono" formControlName="telefono" [class.is-invalid]="userForm.get('telefono')?.touched && userForm.get('telefono')?.invalid">
+          <div class="text-danger float-start" *ngIf="userForm.get('telefono')?.hasError('pattern') && userForm.get('telefono')?.touched">
+            Ingrese numero correcto
+          </div>
+          <div class="text-danger float-start" *ngIf="userForm.get('telefono')?.hasError('required') && userForm.get('telefono')?.touched" >
+            Campo <strong>Requerido</strong>
+          </div>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="email" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="email" formControlName="email" [class.is-invalid]="userForm.get('email')?.touched && userForm.get('email')?.invalid"> 
+            
+            <div class="text-danger float-start" *ngIf="userForm.get('email')?.hasError('pattern')">
+              <strong>Formato de Correo Invalido</strong>
+            </div>
+            <div class="text-danger float-start" *ngIf="userForm.get('email')?.hasError('required') && userForm.get('email')?.touched" >
+              Campo <strong>Requerido</strong>
+            </div>
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="text" class="form-label">Su mensaje (max 150 caracteres)</label>
+            <textarea class="form-control" name="text" id="text" formControlName="text" [class.is-invalid]="userForm.get('text')?.touched && userForm.get('text')?.invalid"></textarea>
+            <div class="text-danger float-start" *ngIf="userForm.get('text')?.hasError('pattern')">
+              Este campo <strong>No Admite caracteres especiales</strong>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">Enviar</button>
+
+      </form>
+  </div>
+
+  </div>
+</div>
+
+

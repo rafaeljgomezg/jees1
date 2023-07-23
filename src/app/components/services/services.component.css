@@ -1,0 +1,111 @@
+.ns-header{
+    margin-top: 10px;
+    text-align: center;
+    font-family: titilliumweb;
+    font-size:2em;
+    font-style: italic;
+}
+
+.servicios-titulo{
+    margin-top: 10px;
+    font-family: titilliumweb;
+    text-align: center;
+}
+
+.ns-header h5{
+    margin-top: 15px;
+}
+
+.ns-header p{
+    font-size: 0.8em;
+}
+
+.header-img{
+    background: rgb(255, 250, 250);
+    box-shadow: 0 0 40px gray; 
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.flex{
+    display: inline-flex;
+    width: 100%;
+    margin-top: 25px;
+    align-items: center;
+    margin-bottom: 15px;
+   
+}
+
+.fondo1{
+    background: rgb(230, 227, 227);
+    box-shadow: 0 0 40px gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: titilliumWeb;
+}   
+
+.fondo1 img{
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.fondo1 h5 {
+    text-align: justify;
+    padding: 15px;
+    line-height: 30px;
+ }
+
+.fondo1 h3{
+    padding: 15px;
+}
+
+
+
+.fondo2{
+    box-shadow: 0 0 40px gray;
+    background: rgb(255, 250, 250);
+    margin-top: 10px;
+    font-family: titilliumWeb;
+}
+
+.fondo2 img {
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.fondo2 h5 {
+    text-align: justify;
+     padding: 15px;
+    line-height: 30px;
+ }
+
+.fondo2 h3{
+    padding: 15px;
+}
+
+.icons {
+    align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+
+
+    .fondo1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fondo2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fondo1 .icons {
+       width: 60%;
+    }
+ 
+    
+}

@@ -1,0 +1,100 @@
+
+<div class="header-img">
+    <img src="../../../assets/img/banner/help-header-1.jpg" >
+
+</div>
+
+
+
+<div class="container">  
+    
+     
+    <div id="sg-img-header" class="fondo0">
+
+        <h2><strong>CELULAS DE BENDICION</strong></h2>
+        <br>
+        <h4 class="insideText">Creemos que es importante que crezcamos continuamente en nuestra relación con el Señor, 
+        así como en las relaciones entre nosotros. En las <strong>Celulas de Bendición</strong> nos reunimos regularmente para estudiar la Biblia, orar unos por otros 
+        y ofrecer oportunidades para construir relaciones duraderas.</h4>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Direcciones de Celulas</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="contenedor mat-elevation-z8" tabindex="0">
+                    <table mat-table [dataSource]="dataSource" >
+                        <ng-container matColumnDef="Item"> 
+                            <th mat-header-cell *matHeaderCellDef> No. </th>
+                            <td mat-cell *matCellDef="let element"> {{element.item}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="Nombre">
+                            <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="Direccion">
+                            <th mat-header-cell *matHeaderCellDef> Direccion </th>
+                            <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="Horario">
+                            <th mat-header-cell *matHeaderCellDef> Horario </th>
+                            <td mat-cell *matCellDef="let element"> {{element.horario}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="Lider">
+                            <th mat-header-cell *matHeaderCellDef> Lider </th>
+                            <td mat-cell *matCellDef="let element"> {{element.lider}} </td>
+                        </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CONTINUAR</button>
+            </div>
+        </div>
+        </div>
+    </div>
+   
+    <div class="fondo2">
+        <div class="texto">
+           <h3 class="subTitulo"><strong>Conectate</strong></h3>
+           <h4 class="insideText">
+                Las Celulas son una de las formas más importantes en que las personas se conectan y crecen juntas en su fe.
+                Sea cual sea tu edad, etapa de la vida o intereses, ¡hay un grupo para ti!
+                <br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Encuentra el Tuyo</button>
+            </h4>
+        </div>
+        <div class="imagen">
+            <img src="../../../assets/img/celulas/celula1.jpg" >
+        </div>
+
+    </div>
+    
+
+    <div class="fondo1">
+        <div class="imagen">
+            <img src="../../../assets/img/celulas/prayer-in-small-group.jpg" alt="">
+        </div>
+        <div class="texto" >
+            <h3 class="subTitulo"><strong>Recursos para los Lideres</strong></h3>
+            <h4 class="insideText">   
+                No tienes que ser un pastor para guiar y discipular a otros. Solo tienes que estar dispuesto a dejar que Dios obre a través de ti.
+                Te proporcionaremos algunos recursos esenciales que te ayudarán a liderar tu Celula con confianza.
+            </h4>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+

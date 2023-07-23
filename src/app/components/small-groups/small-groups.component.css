@@ -1,0 +1,137 @@
+.header-img img{
+    display: block;
+    width: 100%;
+    min-height:100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fondo0{
+    margin-bottom: 20px;
+    font-family: titilliumWeb;
+    text-align: center;
+}
+
+.fondo0 h4 {
+    margin-top: 10px;
+    font-family: titilliumWeb;
+    font-style: italic;
+    
+}
+
+
+.fondo1{
+    min-height: 420px;
+    background: rgb(255, 250, 250);
+    padding: 20px;
+    box-shadow: 0 0 5px gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: titilliumWeb;
+    margin-bottom: 18px;
+}
+
+.fondo1 img {
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    border-radius: 13px;
+}
+.fondo1 .texto{
+    padding: 15px;
+    display: block;
+    float: right;
+     width: 50%;
+}
+.fondo1 .imagen{
+    padding: 15px;
+    display: block;
+     float: left;
+     width: 50%;
+}
+
+.fondo2{
+    display: block;
+    min-height: 420px;
+    padding: 20px;
+    background: rgb(230, 227, 227);
+    box-shadow: 0 0 5px gray;
+    margin-top: 10px;
+    text-align: justify;
+    font-family: titilliumWeb;
+    margin-bottom: 20px;
+}
+
+.fondo2 img {
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    border-radius: 13px;
+}
+.fondo2 .imagen{
+    padding: 15px;
+    display: block;
+     float: left;
+     width: 50%;
+}
+.fondo2 .texto{
+    padding: 15px;
+    display: block;
+    float: right;
+     width: 50%;
+}
+.fondo2 button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-family: yanone;
+    font-size: 1em;
+}
+
+
+.subTitulo{
+    color: rgb(82, 136, 236);
+    
+}
+
+table {
+    width: 100%;
+}
+
+.contenedor{
+    height: 400px;
+    overflow: auto;  
+}
+
+
+@media screen and (max-width: 920px) {
+
+    
+    .fondo1{
+        display: flex;
+        flex-direction: column;
+    }
+    .fondo2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .fondo2 .texto, .fondo1 .texto {
+        display: block;
+        width: 100%;
+        float: left;
+       
+    }
+
+    .fondo2 .imagen, .fondo1 .imagen {
+        width: 100%;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    .fondo1, .fondo2 {
+        min-height: 300px;
+    }
+    
+    
+}
