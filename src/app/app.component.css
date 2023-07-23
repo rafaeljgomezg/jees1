@@ -1,3 +1,4 @@
+
 /*  Cabecera (Header) */
 header {
     display: block;
@@ -115,7 +116,7 @@ footer .fila2 p {
     text-align: center;
 }
 footer .fila2 .redes-sociales{
-    width: 5vw;
+    width: vw;
     margin-right: 10px;
     margin-left: 10px;
     display:inline-block;
@@ -147,15 +148,14 @@ table td, table tr {
 .fila2Flex{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content:space-evenly;
 
 }
 
 
 
 .logo-footer, .location,.horarios{
-    font-size:1.2vw;
+    font-size:1vw;
 }
 
 .logo-footer{
@@ -175,6 +175,20 @@ table td, table tr {
     font-size: 1vw;
 }
 
+.redes-sociales{
+    width: 3vw;
+    margin-right: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+mat-card {
+    background-color: rgb(54, 54, 54);
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
 @media screen and (max-width: 920px) {
 
     .titulo, .logo-footer {
@@ -190,8 +204,13 @@ table td, table tr {
     }
 
     .logo-footer, .location,.horarios, .copyright{
-        font-size:2.5vw;
+        font-size:3vw;
+    }
+
+    .redes-sociales {
+        width: 6vw;
     }
 
 }
+
 

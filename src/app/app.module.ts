@@ -7,6 +7,11 @@ import { NgIf } from '@angular/common';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ToastrModule } from 'ngx-toastr';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 
@@ -21,7 +26,7 @@ import { SmallGroupsComponent } from './components/small-groups/small-groups.com
 import { BaptismComponent } from './components/baptism/baptism.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ErrorComponent } from './components/error/error.component';
-import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
@@ -48,6 +53,10 @@ import { ToastrModule } from 'ngx-toastr';
     MatPaginatorModule,
     ReactiveFormsModule,
     ToastrModule.forRoot({ positionClass: 'toast-bottom-full-width' }), // ToastrModule added
+    MatCardModule, 
+    MatDividerModule, 
+    MatProgressBarModule,
+    GoogleMapsModule
   ],
   providers: [
     {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}

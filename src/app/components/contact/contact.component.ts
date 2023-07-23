@@ -19,7 +19,12 @@ export class ContactComponent implements OnInit {
   emailPattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
   textoPattern="^[a-zA-Z ,-0-9]*$"
 
-  telephoneNumber=""
+  latitud = 40.712776; // Latitud de un lugar específico
+  longitud = -74.005974; // Longitud de un lugar específico
+  zoom = 14; // Nivel de zoom inicial del mapa
+
+
+  contacto:UserContact[]=[]
 
   userForm= new FormGroup({
     nombre: new FormControl('',[Validators.required, Validators.maxLength(40), Validators.pattern(this.nombrePattern)]),
@@ -50,4 +55,7 @@ export class ContactComponent implements OnInit {
     this.toastr.success('Se ha enviado la informacion exitosamente', 'Correcto!!');
     this.userForm.reset()
   }
+
+  
+
 }
