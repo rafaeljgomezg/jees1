@@ -11,7 +11,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ToastrModule } from 'ngx-toastr';
-import { GoogleMapsModule } from '@angular/google-maps';
 
 
 
@@ -56,7 +55,6 @@ import { ErrorComponent } from './components/error/error.component';
     MatCardModule, 
     MatDividerModule, 
     MatProgressBarModule,
-    GoogleMapsModule
   ],
   providers: [
     {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
