@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 import { ToastrService } from 'ngx-toastr';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserContact } from 'src/app/models/modelo';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -50,12 +51,28 @@ export class ContactComponent implements OnInit {
     
   }
 
-  guardarContacto(){
+  /*guardarContacto(){
     console.log(this.userForm)
     this.toastr.success('Se ha enviado la informacion exitosamente', 'Correcto!!');
     this.userForm.reset()
-  }
+  }*/
 
+  async guardarContacto(){
+    emailjs.init('Wy0fH6tQeVg6GVkqA')
+    const resultado = await emailjs.send("service_rzbikgd","template_my82qq1",{
+    from_name: this.userForm.value.nombre,
+    to_name: "Comunidad Carismatica",
+    from_email: this.userForm.value.email,
+    telefono: this.userForm.value.telefono,
+    subject: "Quiero que me contacten",
+    message: this.userForm.value.text,
+    });
+
+    
+    this.toastr.success('Se ha enviado la informacion exitosamente', 'Sera Contactado Pronto!!');
+    this.userForm.reset()
+  }
+    
   
 
 }

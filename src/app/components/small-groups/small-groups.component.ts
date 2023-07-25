@@ -15,9 +15,9 @@ export class SmallGroupsComponent {
   ){}
 
   ELEMENT_DATA: DireccionesCelulas[] = [ 
-    {item: 1, name: 'Jehová Nisi', address: "Jiron Arica 365", horario: "Martes de 19:00 a 21:00", lider: 'Jesus Rojas Joya'},
-    {item: 2, name: 'Jehová Mekkadesh', address: "Jirón Combate de Iquique 843", horario: "Martes de 19:00 a 21:00", lider: 'Adela Lazo Contreras'},
-    {item: 3, name: 'Celula 2 Celula 2', address: "Jiron Arica 365", horario: "Martes de 19:00 a 21:00", lider: 'Otro Lider'},
+    {item: 1, name: 'Jehová Nisi', address: "Jiron Arica 365", horario: "Martes 19:00", lider: 'Jesus Rojas Joya'},
+    {item: 2, name: 'Jehová Mekkadesh', address: "Jirón Combate de Iquique 843", horario: "Martes 19:00", lider: 'Javier Azuaje'},
+    {item: 3, name: 'Familias en La Roca', address: "Jiron Villa Mercedes cerca Arco Av. Roosevelt", horario: "Lunes 20:00", lider: 'Otro Lider'},
     {item: 4, name: 'Celula 2 Celula 2', address: "Jiron Arica 365", horario: "Martes de 19:00 a 21:00", lider: 'Otro Lider'},
     {item: 5, name: 'Celula 2 Celula 2', address: "Jiron Arica 365", horario: "Martes de 19:00 a 21:00", lider: 'Otro Lider'},
     {item: 6, name: 'Celula 2 Celula 2', address: "Jiron Arica 365", horario: "Martes de 19:00 a 21:00", lider: 'Otro Lider'},
