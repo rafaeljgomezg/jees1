@@ -185,8 +185,9 @@ table td, table tr {
 
 mat-card {
     background-color: rgb(54, 54, 54);
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 70px;
+    margin-left: 70px;
+
 }
 
 @media screen and (max-width: 920px) {
@@ -209,6 +210,11 @@ mat-card {
 
     .redes-sociales {
         width: 6vw;
+    }
+
+    mat-card{
+        margin-left: 4px;
+        margin-right: 4px;
     }
 
 }

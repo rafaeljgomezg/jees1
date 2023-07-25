@@ -34,8 +34,6 @@ export class ContactComponent implements OnInit {
     text: new FormControl('',[Validators.maxLength(150), Validators.pattern(this.textoPattern)])
   });
 
-
-
   constructor(private fb: FormBuilder,
     private toastr: ToastrService,
     ){
@@ -51,12 +49,6 @@ export class ContactComponent implements OnInit {
     
   }
 
-  /*guardarContacto(){
-    console.log(this.userForm)
-    this.toastr.success('Se ha enviado la informacion exitosamente', 'Correcto!!');
-    this.userForm.reset()
-  }*/
-
   async guardarContacto(){
     emailjs.init('Wy0fH6tQeVg6GVkqA')
     const resultado = await emailjs.send("service_rzbikgd","template_my82qq1",{
@@ -67,10 +59,15 @@ export class ContactComponent implements OnInit {
     subject: "Quiero que me contacten",
     message: this.userForm.value.text,
     });
-
+    try {
+      this.toastr.success('Se ha enviado la informacion exitosamente', 'Sera Contactado Pronto!!');
+      this.userForm.reset()
+    } catch (error) {
+      console.log(error)
+      this.toastr.error('Hubo un Error', 'ERROR!!');
+    }
     
-    this.toastr.success('Se ha enviado la informacion exitosamente', 'Sera Contactado Pronto!!');
-    this.userForm.reset()
+
   }
     
   
