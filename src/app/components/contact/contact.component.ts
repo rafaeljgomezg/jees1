@@ -50,17 +50,28 @@ export class ContactComponent implements OnInit {
   }
 
   async guardarContacto(){
-    emailjs.init('Wy0fH6tQeVg6GVkqA')
-    const resultado = await emailjs.send("service_rzbikgd","template_my82qq1",{
-    from_name: this.userForm.value.nombre,
-    to_name: "Comunidad Carismatica",
-    from_email: this.userForm.value.email,
-    telefono: this.userForm.value.telefono,
-    subject: "Quiero que me contacten",
-    message: this.userForm.value.text,
+    //emailjs.init('Wy0fH6tQeVg6GVkqA')
+    /*const resultado = await emailjs.send("service_rzbikgd","template_my82qq1",{
+      from_name: this.userForm.value.nombre,
+      to_name: "Comunidad Carismatica",
+      from_email: this.userForm.value.email,
+      telefono: this.userForm.value.telefono,
+      subject: "Quiero que me contacten",
+      message: this.userForm.value.text,
+    });*/
+    emailjs.init('lGw2XnR2bdY8NhsPV')
+    const resultado = await emailjs.send("service_rdplf75","template_t9vzujk",{
+      from_name: this.userForm.value.nombre,
+      to_name: "Comunidad Carismatica",
+      from_email: this.userForm.value.email,
+      telefono: this.userForm.value.telefono,
+      subject: "Quiero que me contacten",
+      message: this.userForm.value.text,
     });
+
     try {
       this.toastr.success('Se ha enviado la informacion exitosamente', 'Sera Contactado Pronto!!');
+      console.log(resultado)
       this.userForm.reset()
     } catch (error) {
       console.log(error)
